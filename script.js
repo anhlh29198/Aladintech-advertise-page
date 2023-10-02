@@ -32,22 +32,19 @@ arrowRight.addEventListener("click", () => {
 });
 
 const hamburgerMenu = document.querySelector(".hamburger");
-
+const hamburgerLine = document.querySelectorAll(".hamburger span");
+const sidebar = document.querySelector(".sidebar");
+const main = document.querySelectorAll("main, footer");
 
 hamburgerMenu.addEventListener("click", () => {
-    const hamburgerLine = document.querySelectorAll(".hamburger span");
     hamburgerLine.forEach((line) => {
         line.classList.toggle("active");
     });
-    const sidebar = document.querySelector(".sidebar");
     sidebar.classList.toggle("active");
-
-    const main = document.querySelectorAll("main, footer");
     main.forEach(section => {
         section.classList.toggle("active");
     });
-    console.log(main);
-
 });
+
 
 

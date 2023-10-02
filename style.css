@@ -95,9 +95,9 @@ a {
 .options.sidebar {
     position: absolute;
     top: 0;
-    left: -40%;
+    left: -250px;
     height: 100vh;
-    width: 40%;
+    width: 250px;
     background-color: #F2F9F1;
     display: flex;
     flex-direction: column;
@@ -128,6 +128,7 @@ main {
 
 main.active {
     opacity: 0.3;
+    pointer-events: none;
 }
 
 #headline {
